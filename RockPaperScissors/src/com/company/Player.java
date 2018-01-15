@@ -39,8 +39,6 @@ public class Player {
 
         /**
          * 定数
-         * 頭に"m"つけなくていいと思うよ(賛否両論)
-         * 定数の命名規則は全部大文字で"_"つながりだよ
          */
         final String ROOK = "グー";
         final String PAPER = "パー";
