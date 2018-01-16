@@ -1,5 +1,10 @@
 package com.company;
 
+// staticインポート使ったやで
+import static com.company.Player.PAPER;
+import static com.company.Player.ROOK;
+import static com.company.Player.SCISSORS;
+
 /**
  * ジャッジクラス
  * <p>
@@ -42,10 +47,6 @@ public class Judge {
      * @return player1Hand が勝ったか負けたか
      */
     public String winOrLossDecision(String player1Hand, String player2Hand) {
-
-        final String ROOK = "グー";
-        final String PAPER = "パー";
-        final String SCISSORS = "チー";
 
         /**
          * 勝敗判定について

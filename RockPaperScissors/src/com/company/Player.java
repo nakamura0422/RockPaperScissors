@@ -11,6 +11,22 @@ import java.util.Scanner;
 public class Player {
 
     /**
+     * 定数
+     */
+    public static final String ROOK = "グー";
+    public static final String PAPER = "パー";
+    public static final String SCISSORS = "チー";
+
+    /**
+     * グー チー パー はintで持ってもStringで持ってもいいよ
+     * Stringの方がわかりやすいかもしれないね
+     */
+    //    final int ROOK = "1";
+    //    final int PAPER = "2";
+    //    final int SCISSORS = "3";
+
+
+    /**
      * グーチョキパーからランダムで手を返すよ
      *
      * @return 選択された手
@@ -36,23 +52,6 @@ public class Player {
      * @return
      */
     private String convertHand(String beforeHand) {
-
-        /**
-         * 定数
-         */
-        final String ROOK = "グー";
-        final String PAPER = "パー";
-        final String SCISSORS = "チー";
-
-        /**
-         * グー チー パー はintで持ってもStringで持ってもいいよ
-         * Stringの方がわかりやすいかもしれないね
-         */
-        //    final int ROOK = "1";
-        //    final int PAPER = "2";
-        //    final int SCISSORS = "3";
-
-
         if (beforeHand.equals("0")) {
             return ROOK;
         } else if (beforeHand.equals("1")) {
@@ -61,6 +60,4 @@ public class Player {
             return SCISSORS;
         }
     }
-
-
 }
