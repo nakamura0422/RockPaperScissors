@@ -1,6 +1,7 @@
 package com.company;
 
 // staticインポート使ったやで
+
 import static com.company.Player.PAPER;
 import static com.company.Player.ROOK;
 import static com.company.Player.SCISSORS;
@@ -59,15 +60,16 @@ public class Judge {
          */
 
         // 同じ手ならあいこ
-        if (player1Hand.equals(player2Hand)) {
+        if (player1Hand.equals(player2Hand))
             return EVEN;
-        } else if (player1Hand.equals(ROOK) && player2Hand.equals(SCISSORS) || player1Hand.equals(SCISSORS) && player2Hand.equals(PAPER) || player1Hand.equals(PAPER) && player2Hand.equals(ROOK)) {
+        if (player1Hand.equals(ROOK) && player2Hand.equals(SCISSORS) ||
+                player1Hand.equals(SCISSORS) && player2Hand.equals(PAPER) ||
+                player1Hand.equals(PAPER) && player2Hand.equals(ROOK))
             // 勝ちの場合
             return WIN;
-        } else {
+        else
             // 負けの場合
             return LOSS;
-        }
     }
 
     /**

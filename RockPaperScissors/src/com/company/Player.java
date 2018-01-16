@@ -52,12 +52,11 @@ public class Player {
      * @return
      */
     private String convertHand(String beforeHand) {
-        if (beforeHand.equals("0")) {
+        if (beforeHand.equals("0"))
             return ROOK;
-        } else if (beforeHand.equals("1")) {
+        if (beforeHand.equals("1"))
             return PAPER;
-        } else {
+        else
             return SCISSORS;
-        }
     }
 }
